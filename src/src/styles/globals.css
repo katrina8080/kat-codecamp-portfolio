@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-error {
+  @apply text-sm italic text-red-500 font-semibold;
+}
+
+.inner-shadow {
+  box-shadow: inset 0px 0px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-top {
+  box-shadow: 0px -4px 4px -4px rgba(0, 0, 0, 0.3);
+}
+
+/* CKEditor */
+.ck-sticky-panel__content {
+  @apply !rounded-lg;
+}
+
+.ck-content {
+  @apply prose dark:prose-invert max-w-none !px-4 focus:!border-gray-300 !shadow-none
+  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3b82f680] focus-visible:ring-offset-2;
+}
+
+.ck-rounded-corners {
+  @apply !rounded-lg mt-4;
+}
+
+.ck-toolbar {
+  @apply !border !rounded-lg !py-1 !px-2;
+}
+
+.ck-powered-by {
+  @apply hidden;
+}
+/* CKEditor End */
